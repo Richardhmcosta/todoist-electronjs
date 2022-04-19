@@ -1,3 +1,13 @@
 body{
   font-family: 'Poppins', sans-serif;
+  background: #f8f8f8;
+  text-align: center;
+}
+h1{
+  font-size: 24px;
+}
+hr{
+  width: 105px;
+  border: 2px solid #e559f9 ;
+  margin-top: 80px;
 }
