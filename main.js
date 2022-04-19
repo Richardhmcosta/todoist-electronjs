@@ -10,7 +10,7 @@ require("electron-reload")(__dirname, {
 })
 // Função responsavel por criar a janela //
 const createWindow = () => {
-    const appIconPath = __dirname+'/logozinha.png';
+    const appIconPath = __dirname+'/assets/logozinha.png';
     const win = new BrowserWindow({
         width: 800,
         height: 600,
