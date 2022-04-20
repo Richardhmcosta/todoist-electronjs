@@ -1,3 +1,10 @@
+* {
+  margin: 0%;
+  padding: 0%;
+  cursor:grab
+}
+
+
 body{
   font-family: 'Poppins', sans-serif;
   background: #f8f8f8;
@@ -11,6 +18,8 @@ hr{
   border: 2px solid #e559f9 ;
   margin-top: 80px;
   margin-bottom: 80px;
+  margin-left: auto;
+  margin-right: auto;
 }
 .conteudo-atividade{
   display: flex;
@@ -21,5 +30,24 @@ hr{
 input{
   border-radius: 8px;
   height: 40px;
+  width: 300px;
   border: 1px solid #A8A8B3;
+  padding-left: 16px;
+  margin-top: 22px;
+}
+button {
+background-color: #835afd ;
+color: #fefefe;
+width: 320px;
+height: 40px;
+border: none;
+border-radius: 8px;
+font-family: 'Roboto', sans-serif;
+font-size: 16px;
+margin-top: 16px;
+cursor: pointer;
+}
+
+button:hover {
+background: #632fff;
 }
