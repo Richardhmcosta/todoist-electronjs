@@ -21,18 +21,25 @@
     
     <h2>O que vou fazer hoje?</h2>
     <input type="text" placeholder="Escreva sua atividade">
-    <button i class="fa-solid fa-bacterium" i> Adicionar <i class="fa-solid fa-skull-crossbones"></i></button>
+    <!-- Botão de adicionar item-->
+    <button onclick="adicionarItem()">
+      <I class="fa-solid fa-bacterium"> </I>
+      adicionar
+      <i class="fa-solid fa-skull-crossbones"></i>
+
+    </button>
 
 
   </div>
 
   <!--Lista de todos-->
 
-  <ul>
+  <ul id="Lista-de-Tarefas" >
 <li>Minha primeira tarefa</li>
 <li>Minha segunda tarefa</li>
 <li>Minha terceira tarefa</li>
   </ul>
-  
+  <!--Importando Script responsavel pela lógica de todo-->
+  <script src="todo-list.js" ></script>
 </body>
 </html>
