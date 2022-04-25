@@ -1,5 +1,17 @@
-function adicionarItem() {
-  const Valorinput = "Minha primeira tarefa"
+function adicionarItemPelaTecla(event) {
+  const tecla = event.key
+  if(tecla === 'Enter'){
+   adicionarItem()
+return
+  }
+}
+
+function adicionarItem(event) {
+
+if (event && event.keycode !== 13) return
+
+
+  const valorinput = document.getElementById('input').value
 //Pegando a tag UL do nosso HTML pelo ID
     const minhaTagUl = document.getElementById('Lista-de-Tarefas')
 
@@ -7,7 +19,7 @@ function adicionarItem() {
     const CriarTagLI = document.createElement('li');
 
     // Adicionando um texto dentro da tag LI
-  CriarTagLI.innerText = Valorinput
+  CriarTagLI.innerText = valorinput
 
     console.log(CriarTagLI)
 

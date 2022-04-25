@@ -20,12 +20,18 @@
   <div class="conteudo-atividade">
     
     <h2>O que vou fazer hoje?</h2>
-    <input type="text" placeholder="Escreva sua atividade">
+    <input 
+    id="input" 
+    type="text"
+     placeholder="Escreva sua atividade"
+    onkeypress="adicionarItemPelaTecla(event)"
+    />
     <!-- Botão de adicionar item-->
     <button onclick="adicionarItem()">
       <I class="fa-solid fa-bacterium"> </I>
       adicionar
       <i class="fa-solid fa-skull-crossbones"></i>
+
 
     </button>
 
