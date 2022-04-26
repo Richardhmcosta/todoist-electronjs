@@ -58,3 +58,8 @@ ul {
   margin-top: 15px;
   color: #6f4bd8;
 }
+
+b {
+  cursor: pointer;
+  color: red;
+}
