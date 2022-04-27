@@ -13,14 +13,15 @@ return
 
 function adicionarItem(event) {
 
-
-
   const valorinput = document.getElementById('input').value
 //Pegando a tag UL do nosso HTML pelo ID
     const minhaTagUl = document.getElementById('Lista-de-Tarefas')
 
 // Criando a tag LI com JavaScript
     const CriarTagLI = document.createElement('li');
+
+// Adicionando um evento de click para a tag <li> 
+    CriarTagLI.addEventListener('click', concluirTarefa)
 
     const tagRemover = `<i onclick='removerItem(event)' class='fa-solid fa-circle-minus icon'> </i>`
 
@@ -34,8 +35,6 @@ function adicionarItem(event) {
     console.log("Entrou na função")
 }
 
-
-
 function removerItem(event) {
 
 // Pegando a tag <i> dentro do nosso evento
@@ -46,5 +45,17 @@ function removerItem(event) {
 
   // Excluindo a tag <li> com a função remove()
     minhaLI.remove()
+
+}
+
+function concluirTarefa(event) {
+
+  // Pegando tag <li> dentro do nosso evento
+  const minhaTagLi = event.target
+  
+  console.log(minhaTagLi)
+
+  minhaTagLi.className = "concluida"
+
 
 }

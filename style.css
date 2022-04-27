@@ -64,3 +64,13 @@ ul {
   color: red;
   margin-left: 10px;
 }
+
+.concluida {
+  color: green;
+  text-decoration: line-through;
+
+}
+
+li {
+  cursor: pointer;
+}
