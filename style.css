@@ -59,7 +59,8 @@ ul {
   color: #6f4bd8;
 }
 
-b {
+.icon {
   cursor: pointer;
   color: red;
+  margin-left: 10px;
 }
