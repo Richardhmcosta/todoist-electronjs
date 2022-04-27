@@ -4,13 +4,15 @@
   "description": "",
   "main": "main.js",
   "scripts": {
-    "start": "electron ."
+    "start": "electron .",
+    "build": "electron-builder"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "devDependencies": {
-    "electron-reload": "^2.0.0-alpha.1",
-    "electron": "^18.0.4"
+    "electron": "^18.0.4",
+    "electron-builder": "^23.0.3",
+    "electron-reload": "^2.0.0-alpha.1"
   }
-}
+} 
